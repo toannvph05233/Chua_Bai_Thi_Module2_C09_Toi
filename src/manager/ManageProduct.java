@@ -1,6 +1,7 @@
 package manager;
 
 import io.ProductIO;
+import io.Product_IO_Binary;
 import model.Product;
 import validate.ValidateProduct;
 
@@ -17,10 +18,10 @@ public class ManageProduct {
     }
 
     public void read() {
-        products = ProductIO.read();
+        products = Product_IO_Binary.read();
     }
     public void write() {
-        ProductIO.write(products);
+        Product_IO_Binary.write(products);
     }
 
 

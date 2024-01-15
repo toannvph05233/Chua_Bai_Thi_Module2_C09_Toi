@@ -1,6 +1,9 @@
 package model;
 
-public class Product {
+import java.io.Serializable;
+
+// Serializable sẽ giúp đối tượng Product chuyển được sang thành nhị phân.
+public class Product implements Serializable{
     private int id;
     private String name;
     private double price;
